@@ -1,0 +1,4 @@
+Filter = StrMatch(Name(), "C???*");
+AddColumn(C<5000, "C<5K", 1.0, IIf(C<5000, colorWhite, colorDefault), IIf(C<5000, colorGreen, colorDefault));
+AddColumn(C<2000, "C<2K", 1.0, IIf(C<2000, colorWhite, colorDefault), IIf(C<2000, colorGreen, colorDefault));
+SetSortColumns(-3, -4);
